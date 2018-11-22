@@ -93,7 +93,7 @@
 
         </div>
         <!-- /.container -->
-
+        
     </div>
     <!-- /.intro-header -->
 
@@ -107,11 +107,39 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
-                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                    <h2 class="section-heading">ประเพณียี่เป็ง เชียงใหม่ 2561 :<br>ชวนลอยกระทงแบบชาวล้านนา</h2>
+                    <p class="lead">ขอเชิญชวนนักท่องเที่ยวเข้าร่วมงานเทศกาลประเพณียี่เป็ง จังหวัดเชียงใหม่ ประจำปี 2561 ร่วมลอยกระทงแบบล้านนา ชมการแสดงศิลปวัฒนธรรม และการประกวดกระทงใบตอง ท่ามกลางบรรยากาศอันสวยงามและอากาศหนาวเย็นของเมืองเชียงใหม่
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/ipad.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Member.<br>SE-442 Sec.1</h2>
+        <h5>5904101301	 นางสาวกรวรรณ จิตร์จวง</h5>     
+        <h5>5904101302	 นายกฤตพิพัฒน์ พางาม</h5>
+        <h5>5904101331	 นางสาวนาตยา ทองรักษ์</h5>
+        <h5>5904101348	 นางสาวภัทร ปุกมณี</h5>
+        <h5>5904101355	 นางสาวมณปริยา ชัยวรรณ์</h5>
+        <h5>5904101388	 นางสาวเหมือนฝัน สุพัฒนาภรณ์</h5>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/catt.jpg" alt="">
                 </div>
             </div>
 
@@ -191,6 +219,7 @@
     </div>
 
     
+
     <div class="content-section-b">
 
         <div class="container">
@@ -200,60 +229,62 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Chart<br></h2>
-                    <p class="lead"><a target="_blank" href="http://www.psdcovers.com/"></a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <p class="lead"> <a target="_blank" href="http://www.psdcovers.com/"></a></p>
                 </div>
-                <html>
-                    <head>
-                      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                      <script type="text/javascript">
-                        google.charts.load('current', {'packages':['bar']});
-                        google.charts.setOnLoadCallback(drawStuff);
-                  
-                        function drawStuff() {
-                          var data = new google.visualization.arrayToDataTable([
-                            ['Members', 'high'],
-                            ["Arm", 160],
-                            ["New", 196],
-                            ["Muay", 163],
-                            ["Pat", 156],
-                            ['Pin', 156],['Mook',160]
-                          ]);
-                  
-                          var options = {
-                            width: 600,
-                            legend: { position: 'none' },
-                            chart: {
-                              title: 'CS446 ',
-                              subtitle: 'Member High },
-                            axes: {
-                              x: {
-                                0: { side: 'top', label: 'Members High'} // Top x-axis.
-                              }
-                            },
-                            bar: { groupWidth: "50%" }
-                          };
-                  
-                          var chart = new google.charts.Bar(document.getElementById('top_x_div'));
-                          // Convert the Classic options to Material options.
-                          chart.draw(data, google.charts.Bar.convertOptions(options));
-                        };
-                      </script>
-                    </head>
-                    <body>
-                      <div id="top_x_div" style="width: 10px; height: 300px;"></div>
-                    </body>
-                  </html>
+                <div class="content-section-b">
+
+     <!--chart อีสัสวิส-->
+                    
+    <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width:500px; height: 500px;"></div>
+  </body>
+</html>
             </div>
 
         </div>
-    </div>
-    <!-- /.content-section-a -->
+        <!-- /.container -->
 
+    </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+   
+    <!-- /.content-section-a -->
 	<a  name="contact"></a>
     <div class="banner">
-
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-6">
                     <h2>Connect to Start Bootstrap:</h2>
@@ -272,13 +303,10 @@
                     </ul>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.banner -->
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -306,13 +334,9 @@
             </div>
         </div>
     </footer>
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
 </body>
-
 </html>
