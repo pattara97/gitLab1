@@ -218,7 +218,63 @@
 
     </div>
 
+    
+    <div class="content-section-b">
 
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Chart<br></h2>
+                    <p class="lead"><a target="_blank" href="http://www.psdcovers.com/"></a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                </div>
+                <html>
+                    <head>
+                      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                      <script type="text/javascript">
+                        google.charts.load('current', {'packages':['bar']});
+                        google.charts.setOnLoadCallback(drawStuff);
+                  
+                        function drawStuff() {
+                          var data = new google.visualization.arrayToDataTable([
+                            ['Members', 'high'],
+                            ["Arm", 160],
+                            ["New", 196],
+                            ["Muay", 163],
+                            ["Pat", 156],
+                            ['Pin', 156],['Mook',160]
+                          ]);
+                  
+                          var options = {
+                            width: 600,
+                            legend: { position: 'none' },
+                            chart: {
+                              title: 'CS446 ',
+                              subtitle: 'Member High },
+                            axes: {
+                              x: {
+                                0: { side: 'top', label: 'Members High'} // Top x-axis.
+                              }
+                            },
+                            bar: { groupWidth: "50%" }
+                          };
+                  
+                          var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+                          // Convert the Classic options to Material options.
+                          chart.draw(data, google.charts.Bar.convertOptions(options));
+                        };
+                      </script>
+                    </head>
+                    <body>
+                      <div id="top_x_div" style="width: 10px; height: 300px;"></div>
+                    </body>
+                  </html>
+            </div>
+
+        </div>
+    </div>
     <!-- /.content-section-a -->
 
 	<a  name="contact"></a>
